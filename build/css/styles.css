@@ -83,7 +83,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.leprechaun {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.leprechaun .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/leprechaun.png");
+  background-image: url("../images/sprites/runstrips/leprechaun.png");
   background-repeat: no-repeat;
   animation: leprechaunrun steps(4);
   animation-duration: 0.5s;
@@ -107,7 +107,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.robot {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.robot .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/robot.png");
+  background-image: url("../images/sprites/runstrips/robot.png");
   background-repeat: no-repeat;
   animation: robotrun steps(8);
   animation-duration: 0.6s;
@@ -131,7 +131,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.kitty {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.kitty .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/kitty.png");
+  background-image: url("../images/sprites/runstrips/kitty.png");
   background-repeat: no-repeat;
   animation: kittyrun steps(8);
   animation-duration: 0.6s;
@@ -155,7 +155,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.puppy {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.puppy .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/puppy.png");
+  background-image: url("../images/sprites/runstrips/puppy.png");
   background-repeat: no-repeat;
   animation: puppyrun steps(8);
   animation-duration: 0.6s;
@@ -179,7 +179,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.adventureMan {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.adventureMan .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/adventureMan.png");
+  background-image: url("../images/sprites/runstrips/adventureMan.png");
   background-repeat: no-repeat;
   animation: amrun steps(10);
   animation-duration: 0.7s;
@@ -203,7 +203,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.adventureWoman {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.adventureWoman .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/adventureWoman.png");
+  background-image: url("../images/sprites/runstrips/adventureWoman.png");
   background-repeat: no-repeat;
   animation: awrun steps(8);
   animation-duration: 0.6s;
@@ -227,7 +227,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.redNinja {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.redNinja .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/redNinja.png");
+  background-image: url("../images/sprites/runstrips/redNinja.png");
   background-repeat: no-repeat;
   animation: rnrun steps(10);
   animation-duration: 0.7s;
@@ -251,7 +251,7 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.purpleNinja {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.purpleNinja .character-sprite {
   width: 100%;
-  background-image: url("../images/sprites/runStrips/purpleNinja.png");
+  background-image: url("../images/sprites/runstrips/purpleNinja.png");
   background-repeat: no-repeat;
   animation: pnrun steps(10);
   animation-duration: 0.7s;
