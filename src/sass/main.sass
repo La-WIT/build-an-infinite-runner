@@ -1,0 +1,153 @@
+$teal: #0AAD8F
+$gold: #FFC801
+$purple: #61045F
+$navy: #222a35
+
+@import sprite-spirit
+
+body
+  background: $teal
+  background: url('../images/bg.png') repeat
+.navbar 
+  background: $navy  
+code
+  background: rgba(0,0,0,0.3)
+  color: black
+  font-family: monospace
+#home
+  text-align: center
+section
+  background: lighten($gold, 40%)
+  border-radius: 10px
+  margin: 20px 30px
+  padding: 20px
+  .subsection-title
+    text-align: center
+    margin: 30px
+  .jumbotron
+    background: $purple
+    color: white
+    code
+      color: white
+.main-jumbo
+  background: url('../images/bannerBG.png') repeat  
+  min-height: 380px    
+  display: inline-block
+  width: 100%
+div.game-art-card
+  padding: 10px
+div.game-art-inner-wrapper
+  border-radius: 5px
+  display: flex
+  flex-flow: column wrap
+  overflow: hidden
+  background: white
+  .btn
+    background: $gold
+    border: none
+    float: right
+    margin-top: 20px
+    &:hover
+      background: darken($gold, 3%)
+  div.game-art-image-wrapper
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 150px
+    &.leprechaun
+      background: #73c3e2
+      background: radial-gradient(#0e14ea, #0a0c54)
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('leprechaunrun', '../images/sprites/runStrips/leprechaun.png', false, 1000px, 250px, 4, 0.5, 0, false)
+    &.robot
+      background: #73c3e2
+      background: radial-gradient(#ff420a, #a02b08)
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('robotrun', '../images/sprites/runStrips/robot.png', false, 2000px, 250px, 8, 0.6, 0, false)
+    &.kitty
+      background: #73c3e2
+      background: radial-gradient(#edc02d, #a58109)
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('kittyrun', '../images/sprites/runStrips/kitty.png', false, 2000px, 250px, 8, 0.6, 0, false)
+    &.puppy
+      background: #73c3e2
+      background: radial-gradient(#ac0bc9, #4c0359)
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('puppyrun', '../images/sprites/runStrips/puppy.png', false, 2000px, 250px, 8, 0.6, 0, false)
+    &.adventureMan
+      background: #73c3e2
+      background: radial-gradient(#73c3e2, #3b7e99)
+      
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('amrun', '../images/sprites/runStrips/adventureMan.png', false, 2500px, 250px, 10, .7, 0, false)
+    &.adventureWoman
+      background: #73c3e2
+      background: radial-gradient(#abd843, #668225)
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('awrun', '../images/sprites/runStrips/adventureWoman.png', false, 2000px, 250px, 8, 0.6, 0, false)
+    &.redNinja
+      background: #73c3e2
+      background: radial-gradient(#e1ed04, #a5ad08)
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('rnrun', '../images/sprites/runStrips/redNinja.png', false, 2500px, 250px, 10, .7, 0, false)
+    &.purpleNinja
+      background: #73c3e2
+      background: radial-gradient(#dd06af, #72085b)
+      .character-sprite
+        width: 100%
+        @include spriteSpirit('pnrun', '../images/sprites/runStrips/purpleNinja.png', false, 2500px, 250px, 10, .7, 0, false)
+  .game-art-text
+    padding: 10px
+#code-snippets
+  padding: auto 10px
+  .main-section-title, .section-subtitle
+    text-align: center
+    width: 90%
+    margin: auto
+  .code-snippet
+    max-width: 100%
+    margin: 0
+  hr
+    background: #222
+    border-bottom: #222
+    height: 0
+    width: 80%
+  .snippet
+    background: #222
+    overflow: hidden
+    color: white
+    max-width: 100%
+    margin-bottom: 10px
+    border-radius: 5px 
+  .snippet-title
+    background: $purple
+    font-weight: normal
+    padding: 5px
+    font-size: 1.1rem
+    code
+      color: white
+  .snippet-text
+    padding: 10px
+    color: white
+footer
+  background: $navy
+  padding: 30px 15px
+  color: white
+  .copy
+    font-size: .9rem
+  .logos
+    img
+      border-radius: 5px 
+.modal-custom
+  background: #222
+  padding: 20px
+  code
+    color: white

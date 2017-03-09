@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Build A Javascript Game | IT Girls</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="build/css/styles.css">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#game-art-and-media">Game Art and Media</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#code-snippets">Code Snippets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Play the Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Solutions to Further Practice Challenges</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home" class="jumbotron main-jumbo jumbotron-fluid">
+      <h1 class="display-3 align-middle">Building an Infinite Runner in P5.js</h1>
+    </div>
+    <section class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <h1>Welcome to IT Girls 2017!</h1>
+          <p>Are you interested in computer programming, web development, game development, or just making fun things? Have you done a bit of programming with Scratch, Snap!, or Blocky and want to transition into a typed programming experience? This class is designed to help you do just that! Don’t worry if this is your first time programming! This is a beginner-friendly exercise that will get you up and programming right away!</p>
+          <h2>You Will Learn</h2>
+          <ul>
+            <li>Basic JavaScript syntax and structure</li>
+            <li>How to manipulate game sprites</li>
+            <li>Draw on the HTML canvas</li>
+            <li>How to use JavaScript libraries to make programming easier</li>
+          </ul>
+          <p>To get started, you can click here to get the booklet for this workshop. You can download and print it or view it online. Follow along to build an infinite runner game in JavaScript! Want to see what you’ll be making? Click here to play the game! </p>
+        </div>
+        <div class="col-md-3">
+          <h3>Download the Instruction Booklet</h3>
+          <img src="http://placehold.it/100x150" alt="Book Cover">
+        </div>
+      </div>
+    </section><!-- /home -->
+    <section id="game-art-and-media" class="container">
+      <div class="jumbotron">
+        <h1 class="display-3">Game Art and Media</h1>
+        <p class="lead">Here you will find all of the artwork, sounds, and music referenced in the booklet. You can just copy and paste the necessary code into your <code>preload()</code> function. If you ever feel like changing the theme of your game, just replace the code in the <code>preload()</code> function with your new choice.</p>
+      </div><!-- /jumbotron -->
+      <h1 class="subsection-title">Runner Characters</h1>
+      <div class="row characters">
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner leprechaun"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Leprechaun</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#leprechaun-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner robot"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Robot</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#robot-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner redNinja"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Red Ninja</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#red-ninja-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner purpleNinja"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Purple Ninja</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#purple-ninja-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner kitty"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Kitty</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#kitty-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner puppy"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Puppy</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#puppy-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner adventureWoman"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Adventure Woman</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#adventure-woman-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner adventureMan"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Adventure Man</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#adventure-man-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row characters -->
+      <h1 class="subsection-title">Environment Art</h1>
+      <div class="row backgrounds">
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper background mountain"><img src="build/images/environments/defaultThumb.png" height="300" width="600" alt="background-image" class="background-thumbnail" /></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Mountain Scene</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#mountain-scene-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper background industrial"><img src="build/images/environments/industrialThumb.png" height="300" width="600" alt="background-image" class="background-thumbnail" /></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Industrial Scene</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#industrial-scene-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper background desert"><img src="build/images/environments/desertThumb.png" height="300" width="600"  alt="background-image" class="background-thumbnail" /></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Desert Scene</h3>
+              <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#desert-scene-modal">Get the Code</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /row backgrounds -->
+    </section><!-- /game-art-and-media -->
+    <section class="container" id="code-snippets">
+      <div class="jumbotron">
+        <h1 class="display-3">Code Snippets</h1>
+        <p class="lead">In this section, you'll find code snippets to make following the lesson easier. Just the text you need and paste into your code.</p>
+      </div><!--   /jumbotron -->
+      <div class="row">
+        <h2 class="main-section-title">Introduction to P5.js</h2>
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Setting Up Our P5.js Structure </h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your JavaScript seection of your CodePen window.</h4>
+            <pre class="snippet-text">
+function setup(){
+
+}
+function draw(){
+
+}
+// We'll define our own functions below here.
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /sub-snippet-->
+        </section><!-- /whole code snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Creating the Canvas</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+createCanvas(840,390);
+background(200, 200, 200);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /sub-snippet-->
+        </section><!-- /whole code snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Drawing a Circle</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+ellipse(100,200,30,30);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /sub-snippet-->
+        </section><!-- /whole code snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Giving the Circle Color</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+fill(23,55,100);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /sub-snippet-->
+        </section><!-- /whole code snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Follow The Cursor</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Replace the <code>ellipse</code> function with this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+ellipse(mouseX,mouseY,30,30);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /sub-snippet-->
+        </section>
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Automatic Movement</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var circlePosition;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+circlePosition = 100;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Replace the <code>ellipse</code> function with this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+ellipse(circlePosition, 200,30,30);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+          <hr>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+circlePosition = circlePosition + 1;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /sub-snippet-->
+          <hr>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+background(200,200,200);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /sub-snippet-->
+        </section><!-- /whole code snippet -->
+        <h2 class='main-section-title'>Using P5.play to Code Your Game</h2>
+        <h4 class="section-subtitle">Clear out both your <code>setup()</code> and <code>draw()</code> functions and delete your <code>circlePosition</code> variable when you start this section.</h4>
+        <br>
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Follow The Cursor</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var runner;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+createCanvas(840,390);
+runner = createSprite(50,100,25,40);
+runner.depth = 4;
+
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+background(200);
+drawSprites();
+
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+        </section>
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">The Preload Function</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Add this function before the draw()</h4>
+            <pre class="snippet-text">
+function preload(){
+
+}
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /new user-Declared function-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Follow The Cursor</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare these variables at the top of your code</h4>
+            <pre class="snippet-text">
+var runningAnimation;
+var jumpingAnimation;
+var gameBackground;
+var platformBackground;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+runner.addAnimation('jump', jumpingAnimation);
+runner.addAnimation('run', runningAnimation);
+runner.setCollider("rectangle", 0,0,10,41);
+runner.depth = 4;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Conditional Statements</h3>
+          <div class="snippet">
+           <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+           <pre class="snippet-text">
+if(!gameOver){
+    background(200);
+    drawSprites();
+  }
+
+  if(gameOver){
+
+  }
+           </pre>
+           <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+         </div><!-- /draw sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Is the Game Over?</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var gameOver = false;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+gameOver = false;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h2 class="main-section-title">Making Our Own Functions</h2>
+          <br>
+          <h3 class="section-title">Adding the Platforms Group</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var platformsGroup = new Group;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Adding Platforms to the Game</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var currentPlatformLocation = -width;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+          <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+          <pre class="snippet-text">
+function addNewPlatforms(){
+  if(platformsGroup.length &lt; 5){
+    var currentPlatformLength = 1132;
+    var platform = createSprite((currentPlatformLocation * 1.3), random(300,400), 1132, 336);
+
+    currentPlatformLocation += currentPlatformLength;
+    platform.addAnimation('default', platformBackground);
+    platform.depth = 3;
+    platformsGroup.add(platform);
+  };
+}
+          </pre>
+          <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+        </div><!-- /user-Declared sub-snippet-->
+        <div class="snippet">
+          <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+          <pre class="snippet-text">
+addNewPlatforms();
+          </pre>
+          <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+        </div><!-- /draw sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Adding Physics</h3>
+          <div class="snippet">
+          <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+          <pre class="snippet-text">
+var gravity = 1;
+          </pre>
+          <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+        </div><!-- /var sub-snippet-->
+        <div class="snippet">
+          <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+          <pre class="snippet-text">
+runner.velocity.y += gravity;
+          </pre>
+          <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+        </div><!-- /draw sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Collision Detection</h3>
+          <div class="snippet">
+           <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+           <pre class="snippet-text">
+runner.collide(platformsGroup, solidGround);
+           </pre>
+           <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+         </div><!-- /draw sub-snippet-->
+         <div class="snippet">
+         <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+         <pre class="snippet-text">
+function solidGround(){
+  runner.velocity.y = 0;
+  runner.changeAnimation("run");
+  if(runner.touching.right){
+    runner.velocity.x = 0;
+    runner.velocity.y+= gravity;
+  }
+}
+         </pre>
+         <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+       </div><!-- /user-Declared sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Jumping</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var jumpPower = 15;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+           <div class="snippet">
+             <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+             <pre class="snippet-text">
+jumpDetection();
+             </pre>
+             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+           </div><!-- /draw sub-snippet-->
+             <div class="snippet">
+               <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+               <pre class="snippet-text">
+function jumpDetection(){
+  if(keyWentDown(UP_ARROW)){
+    runner.changeAnimation("jump");
+    runner.animation.rewind();
+    runner.velocity.y = -jumpPower;
+  }
+}
+               </pre>
+               <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+             </div><!-- /user-Declared sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Running</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var runnerSpeed = 15;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+runner.velocity.x = runnerSpeed;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">The Virtual Camera</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+camera.position.x = runner.position.x + 300;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Garbage Collection</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+removeOldPlatforms();
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+            <pre class="snippet-text">
+function removeOldPlatforms(){
+  for(var i = 0; i &lt; platformsGroup.length; i++){
+      if((platformsGroup[i].position.x) &lt; runner.position.x-width){
+        platformsGroup[i].remove();
+    };
+  };
+}
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /user-Declared sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Background Art</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare and assign these variables at the top of your code</h4>
+            <pre class="snippet-text">
+var currentBackgroundTilePosition = -width;
+var backgroundTiles = new Group;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+addNewBackgroundTiles();
+removeOldBackgroundTiles();
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Declare these functions at the bottom of your code</h4>
+            <pre class="snippet-text">
+function addNewBackgroundTiles(){
+  if(backgroundTiles.length &lt; 3){
+    currentBackgroundTilePosition += 839;
+    var bgLoop = createSprite(currentBackgroundTilePosition, height/2, 840, 390);
+    bgLoop.addAnimation('bg', gameBackground);
+    bgLoop.depth = 1;
+    backgroundTiles.add(bgLoop);
+  }
+}
+
+function removeOldBackgroundTiles(){
+  for(var i = 0; i &lt; backgroundTiles.length; i++){
+      if((backgroundTiles[i].position.x) &lt; runner.position.x-width){
+        backgroundTiles[i].remove();
+    }
+  }
+}
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /user-Declared sub-snippet-->
+        </section><!-- /whole snippet -->
+        <h2 class="main-section-title">Adding a Lose Condition</h2>
+        <br>
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Checking for Falls</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+fallCheck();
+updateSprites(false);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+            <pre class="snippet-text">
+function fallCheck(){
+  if(runner.position.y > height){
+      gameOver = true;
+    }
+}
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /user-Declared sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Adding Game Over Text</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+gameOverText();
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+            <pre class="snippet-text">
+function gameOverText(){
+    background(0,0,0,3)
+    fill('white');
+    stroke('black')
+    textAlign(CENTER);
+    textFont(gameFont);
+
+    textSize(90);
+    strokeWeight(10);
+    text("GAME OVER", camera.position.x, camera.position.y);
+
+    textSize(15);
+    text("Jump to try again", camera.position.x, camera.position.y + 100);
+}
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /user-Declared sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Restarting the Game</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+            <pre class="snippet-text">
+newGame();
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+            <pre class="snippet-text">
+function newGame(){
+  if((keyWentDown(UP_ARROW)) ){
+    platformsGroup.removeSprites();
+    backgroundTiles.removeSprites();
+    gameOver = false;
+    updateSprites(true);
+    runnerSpeed = 15;
+    runner.position.x = 50;
+    runner.position.y = 100;
+    runner.velocity.x = runnerSpeed;
+    currentPlatformLocation = -width;
+    currentBackgroundTilePosition = -width;
+  }
+}
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+        </section><!-- /whole snippet -->
+        <h2 class="main-section-title">Adding the Finishing Touches</h2>
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Point Counter</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Declare this variable at the top of your code</h4>
+            <pre class="snippet-text">
+var playerScore = 0;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+          <div class="snippet">
+          <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
+          <pre class="snippet-text">
+updateScore();
+          </pre>
+          <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+        </div><!-- /draw sub-snippet-->
+        <p class="special-note">*Be sure to put this function <em>after</em> the <code>drawSprites()</code> function or the code won't work.</p>
+        <div class="snippet">
+          <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
+          <pre class="snippet-text">
+function updateScore(){
+  if(frameCount % 60 === 0){
+    playerScore++;
+  }
+  fill('white')
+  strokeWeight(2);
+  stroke('black');
+  textSize(20);
+  textAlign(CENTER);
+  text(playerScore, camera.position.x + 350, camera.position.y + 160);
+}
+          </pre>
+          <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+        </div><!-- /user-Declared sub-snippet-->
+
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Updating Previous Functions</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this at the bottom of your <code>gameOverText()</code> function.</h4>
+            <pre class="snippet-text">
+strokeWeight(2);
+textSize(20);
+text("You ran " + playerScore + ' yards!', camera.position.x, camera.position.y + 50);
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>newGame()</code> function.</h4>
+            <pre class="snippet-text">
+playerScore = 0;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Custom Loading Screen</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>HTML</code> section of your Codepen Window.</h4>
+            <pre class="snippet-text">
+&lt;div id="p5_loading" class='loading-screen'&gt;&lt;p&gt;LOADING&lt;/p&gt;&lt;/div&gt;
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /draw sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Styling Your Webpage</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>CSS</code> section of your Codepen Window.</h4>
+            <pre class="snippet-text">
+body {
+  background: #777;
+}
+canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.loading-screen {
+  background: black;
+  min-width: 840px;
+  min-height: 390px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-text: center;
+}
+.loading-screen p {
+  -webkit-animation: pulse 1s linear 2s infinite alternate;
+          animation: pulse 1s linear 2s infinite alternate;
+}
+@-webkit-keyframes pulse {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+            </pre>
+            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /var sub-snippet-->
+        </section><!-- /whole snippet -->
+      </div>
+    </section><!-- / all code-snippets -->
+    <footer>
+      <div class="container container-fluid">
+        <div class="row">
+          <div class="col-md-8 copy">
+            <p>This workshop is a part of LaWIT’s IT Girls program. IT Girls is an annual creative computing workshop geared toward East Baton Rouge Parish middle school girls held in the spring. The program provides an opportunity for female students to learn coding fundamentals directly from local STEM professionals, which provides a unique opportunity to actively explore and game greater insight into the high-demand fiend of computer programming. The goal of IT Girls is to increase student interest and preparedness for the STEM workforce and Louisiana’s knowledge economy.</p>
+          </div>
+          <div class="col-md-4 logos">
+            <img class='lawit-logo' src="http://placehold.it/100x100" alt="laWIT Logo" />
+            <img src="http://placehold.it/150x100" alt="IT Girls Logo" class="itgirls-logo">
+          </div>
+        </div>
+      </div>
+    </footer>
+   <!--  ====================================================
+                    Modals Beyond Here
+    ==================================================== -->
+    <!-- Leprechaun Modal -->
+    <div id="leprechaun-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+leprechaun
+          </code></pre>
+        </div>
+      </div>
+    </div>
+    <!-- Robot Modal -->
+    <div id="robot-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+robot
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Red Ninja Modal -->
+    <div id="red-ninja-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+red ninja
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Purple Ninja Modal -->
+    <div id="purple-ninja-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+purple ninja
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kitty Modal -->
+    <div id="kitty-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+kitty
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Puppy Modal -->
+    <div id="puppy-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+puppy
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adventure Man Modal -->
+    <div id="adventure-man-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+adventure man
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Adventure Woman Modal -->
+    <div id="adventure-woman-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+adventure woman
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mountain Scene Modal -->
+    <div id="mountain-scene-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+mountain scene
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desert Scene Modal -->
+    <div id="desert-scene-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+desert scene
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Industrial Scene Modal -->
+    <div id="industrial-scene-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content modal-custom">
+          <pre><code>
+industrial scene
+          </code></pre>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

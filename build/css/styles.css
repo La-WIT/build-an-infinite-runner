@@ -1,0 +1,343 @@
+body {
+  background: #0AAD8F;
+  background: url("../images/bg.png") repeat;
+}
+
+.navbar {
+  background: #222a35;
+}
+
+code {
+  background: rgba(0, 0, 0, 0.3);
+  color: black;
+  font-family: monospace;
+}
+
+#home {
+  text-align: center;
+}
+
+section {
+  background: #fff4cd;
+  border-radius: 10px;
+  margin: 20px 30px;
+  padding: 20px;
+}
+
+section .subsection-title {
+  text-align: center;
+  margin: 30px;
+}
+
+section .jumbotron {
+  background: #61045F;
+  color: white;
+}
+
+section .jumbotron code {
+  color: white;
+}
+
+.main-jumbo {
+  background: url("../images/bannerBG.png") repeat;
+  min-height: 380px;
+  display: inline-block;
+  width: 100%;
+}
+
+div.game-art-card {
+  padding: 10px;
+}
+
+div.game-art-inner-wrapper {
+  border-radius: 5px;
+  display: flex;
+  flex-flow: column wrap;
+  overflow: hidden;
+  background: white;
+}
+
+div.game-art-inner-wrapper .btn {
+  background: #FFC801;
+  border: none;
+  float: right;
+  margin-top: 20px;
+}
+
+div.game-art-inner-wrapper .btn:hover {
+  background: #f1bd00;
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.leprechaun {
+  background: #73c3e2;
+  background: radial-gradient(#0e14ea, #0a0c54);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.leprechaun .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/leprechaun.png");
+  background-repeat: no-repeat;
+  animation: leprechaunrun steps(4);
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes leprechaunrun {
+  to {
+    background-position: -1000px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.robot {
+  background: #73c3e2;
+  background: radial-gradient(#ff420a, #a02b08);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.robot .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/robot.png");
+  background-repeat: no-repeat;
+  animation: robotrun steps(8);
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes robotrun {
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.kitty {
+  background: #73c3e2;
+  background: radial-gradient(#edc02d, #a58109);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.kitty .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/kitty.png");
+  background-repeat: no-repeat;
+  animation: kittyrun steps(8);
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes kittyrun {
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.puppy {
+  background: #73c3e2;
+  background: radial-gradient(#ac0bc9, #4c0359);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.puppy .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/puppy.png");
+  background-repeat: no-repeat;
+  animation: puppyrun steps(8);
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes puppyrun {
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.adventureMan {
+  background: #73c3e2;
+  background: radial-gradient(#73c3e2, #3b7e99);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.adventureMan .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/adventureMan.png");
+  background-repeat: no-repeat;
+  animation: amrun steps(10);
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes amrun {
+  to {
+    background-position: -2500px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.adventureWoman {
+  background: #73c3e2;
+  background: radial-gradient(#abd843, #668225);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.adventureWoman .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/adventureWoman.png");
+  background-repeat: no-repeat;
+  animation: awrun steps(8);
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes awrun {
+  to {
+    background-position: -2000px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.redNinja {
+  background: #73c3e2;
+  background: radial-gradient(#e1ed04, #a5ad08);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.redNinja .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/redNinja.png");
+  background-repeat: no-repeat;
+  animation: rnrun steps(10);
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes rnrun {
+  to {
+    background-position: -2500px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.purpleNinja {
+  background: #73c3e2;
+  background: radial-gradient(#dd06af, #72085b);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.purpleNinja .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runStrips/purpleNinja.png");
+  background-repeat: no-repeat;
+  animation: pnrun steps(10);
+  animation-duration: 0.7s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+@keyframes pnrun {
+  to {
+    background-position: -2500px 0;
+  }
+}
+
+div.game-art-inner-wrapper .game-art-text {
+  padding: 10px;
+}
+
+#code-snippets {
+  padding: auto 10px;
+}
+
+#code-snippets .main-section-title, #code-snippets .section-subtitle {
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+
+#code-snippets .code-snippet {
+  max-width: 100%;
+  margin: 0;
+}
+
+#code-snippets hr {
+  background: #222;
+  border-bottom: #222;
+  height: 0;
+  width: 80%;
+}
+
+#code-snippets .snippet {
+  background: #222;
+  overflow: hidden;
+  color: white;
+  max-width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#code-snippets .snippet-title {
+  background: #61045F;
+  font-weight: normal;
+  padding: 5px;
+  font-size: 1.1rem;
+}
+
+#code-snippets .snippet-title code {
+  color: white;
+}
+
+#code-snippets .snippet-text {
+  padding: 10px;
+  color: white;
+}
+
+footer {
+  background: #222a35;
+  padding: 30px 15px;
+  color: white;
+}
+
+footer .copy {
+  font-size: .9rem;
+}
+
+footer .logos img {
+  border-radius: 5px;
+}
+
+.modal-custom {
+  background: #222;
+  padding: 20px;
+}
+
+.modal-custom code {
+  color: white;
+}
