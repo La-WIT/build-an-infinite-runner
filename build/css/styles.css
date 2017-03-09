@@ -107,7 +107,11 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.robot {
 
 div.game-art-inner-wrapper div.game-art-image-wrapper.robot .character-sprite {
   width: 100%;
+<<<<<<< HEAD
   background-image: url("../images/sprites/runstrips/robot.png");
+=======
+  background-image: url("images/sprites/runStrips/robot.png");
+>>>>>>> 348afb1a9c1050137e021f99cd55c4ddd486a5e9
   background-repeat: no-repeat;
   animation: robotrun steps(8);
   animation-duration: 0.6s;
