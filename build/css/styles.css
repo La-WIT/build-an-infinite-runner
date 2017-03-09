@@ -331,14 +331,13 @@ footer .copy {
 
 footer .logos {
   display: flex;
-  flex-flow: column wrap;
 }
 
 footer .logos img {
   border-radius: 5px;
-  width: 100%;
+  width: auto;
   margin: 5px;
-  height: auto;
+  height: 120px;
 }
 
 .modal-custom {
