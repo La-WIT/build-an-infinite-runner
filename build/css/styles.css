@@ -17,6 +17,11 @@ code {
   text-align: center;
 }
 
+.book-cover {
+  width: 100%;
+  height: auto;
+}
+
 section {
   background: #fff4cd;
   border-radius: 10px;
