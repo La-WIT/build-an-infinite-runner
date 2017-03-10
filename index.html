@@ -60,7 +60,7 @@
         </div>
         <div class="col-md-3">
           <h3>Download the Instruction Booklet</h3>
-          <a href="https://la-wit.github.io/build-an-infinite-runner/build/js/p5lib.js" class="book-link"><img class='book-cover' src="build/images/booklet-cover.jpg" alt="Book Cover"></a>
+          <a href="https://la-wit.github.io/build-an-infinite-runner/build/docs/it-girls-instructional-booklet.pdf" class="book-link"><img class='book-cover' src="build/images/booklet-cover.jpg" alt="Book Cover"></a>
         </div>
       </div>
     </section><!-- /home -->
@@ -283,7 +283,7 @@ circlePosition = 100;
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
           <div class="snippet">
-            <h4 class="snippet-title">Replace the <code>ellipse</code> function with this in your <code>draw()</code> function.</h4>
+            <h4 class="snippet-title">Replace the <code>ellipse()</code> function with this in your <code>draw()</code> function.</h4>
             <pre class="snippet-text">
 ellipse(circlePosition, 200,30,30);
             </pre>
@@ -369,7 +369,6 @@ var gameFont;
 runner.addAnimation('jump', jumpingAnimation);
 runner.addAnimation('run', runningAnimation);
 runner.setCollider("rectangle", 0,0,10,41);
-runner.depth = 4;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
@@ -400,35 +399,42 @@ var gameOver = false;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /var sub-snippet-->
-          <div class="snippet">
-            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
-            <pre class="snippet-text">
-gameOver = false;
-            </pre>
-            <!-- <button class="btn btn-primary">Copy Snippet</button> -->
-          </div><!-- /setup sub-snippet-->
         </section><!-- /whole snippet -->
         <section class=" col-sm-12 code-snippet">
           <h2 class="main-section-title">Making Our Own Functions</h2>
           <br>
           <h3 class="section-title">Adding the Platforms Group</h3>
           <div class="snippet">
-            <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+            <h4 class="snippet-title">Declare this variable at the top of your code</h4>
             <pre class="snippet-text">
-var platformsGroup = new Group;
+var platformsGroup;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+platformsGroup = new Group;
+            </pre>
+            <button class="btn btn-primary">Copy Snippet</button>
+          </div><!-- /setup sub-snippet-->
         </section><!-- /whole snippet -->
         <section class=" col-sm-12 code-snippet">
           <h3 class="section-title">Adding Platforms to the Game</h3>
           <div class="snippet">
-            <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+            <h4 class="snippet-title">Declare this variable at the top of your code</h4>
             <pre class="snippet-text">
 var currentPlatformLocation = -width;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+currentPlatformLocation = -width
+            </pre>
+            <button class="btn btn-primary">Copy Snippet</button>
+          </div><!-- /setup sub-snippet-->
           <div class="snippet">
           <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
           <pre class="snippet-text">
@@ -457,12 +463,19 @@ addNewPlatforms();
         <section class=" col-sm-12 code-snippet">
           <h3 class="section-title">Adding Physics</h3>
           <div class="snippet">
-          <h4 class="snippet-title">Declare and assign this variable at the top of your code</h4>
+          <h4 class="snippet-title">Declare this variable at the top of your code</h4>
           <pre class="snippet-text">
 var gravity = 1;
           </pre>
           <!-- <button class="btn btn-primary">Copy Snippet</button> -->
         </div><!-- /var sub-snippet-->
+        <div class="snippet">
+          <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+          <pre class="snippet-text">
+gravity = 1;
+          </pre>
+          <button class="btn btn-primary">Copy Snippet</button>
+        </div><!-- /setup sub-snippet-->
         <div class="snippet">
           <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
           <pre class="snippet-text">
@@ -579,13 +592,21 @@ function removeOldPlatforms(){
         <section class=" col-sm-12 code-snippet">
           <h3 class="section-title">Background Art</h3>
           <div class="snippet">
-            <h4 class="snippet-title">Declare and assign these variables at the top of your code</h4>
+            <h4 class="snippet-title">Declare these variables at the top of your code</h4>
             <pre class="snippet-text">
-var currentBackgroundTilePosition = -width;
-var backgroundTiles = new Group;
+var currentBackgroundTilePosition;
+var backgroundTiles;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /var sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+currentBackgroundTilePosition = -width;
+backgroundTiles = new Group;
+            </pre>
+            <button class="btn btn-primary">Copy Snippet</button>
+          </div><!-- /setup sub-snippet-->
           <div class="snippet">
             <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
             <pre class="snippet-text">
@@ -661,6 +682,7 @@ function gameOverText(){
     textAlign(CENTER);
     textFont(gameFont);
 
+    strokeWeight(2);
     textSize(90);
     strokeWeight(10);
     text("GAME OVER", camera.position.x, camera.position.y);
@@ -745,7 +767,6 @@ function updateScore(){
           <div class="snippet">
             <h4 class="snippet-title">Put this at the bottom of your <code>gameOverText()</code> function.</h4>
             <pre class="snippet-text">
-strokeWeight(2);
 textSize(20);
 text("You ran " + playerScore + ' yards!', camera.position.x, camera.position.y + 50);
             </pre>
