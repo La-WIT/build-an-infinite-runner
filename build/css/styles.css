@@ -20,6 +20,8 @@ code {
 .book-cover {
   max-width: 100%;
   height: auto;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 section {
