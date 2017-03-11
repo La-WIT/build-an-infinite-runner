@@ -324,7 +324,6 @@ var runner;
 createCanvas(840,390);
 runner = createSprite(50,100,25,40);
 runner.depth = 4;
-
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
@@ -333,7 +332,6 @@ runner.depth = 4;
             <pre class="snippet-text">
 background(200);
 drawSprites();
-
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /draw sub-snippet-->
@@ -360,6 +358,8 @@ var jumpingAnimation;
 var gameBackground;
 var platformBackground;
 var gameFont;
+var gameMusic;
+var GameOverMusic;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /var sub-snippet-->
@@ -416,7 +416,7 @@ var platformsGroup;
             <pre class="snippet-text">
 platformsGroup = new Group;
             </pre>
-            <button class="btn btn-primary">Copy Snippet</button>
+<!--             <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
         </section><!-- /whole snippet -->
         <section class=" col-sm-12 code-snippet">
@@ -433,7 +433,7 @@ var currentPlatformLocation = -width;
             <pre class="snippet-text">
 currentPlatformLocation = -width
             </pre>
-            <button class="btn btn-primary">Copy Snippet</button>
+<!--             <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
           <div class="snippet">
           <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
@@ -474,7 +474,7 @@ var gravity = 1;
           <pre class="snippet-text">
 gravity = 1;
           </pre>
-          <button class="btn btn-primary">Copy Snippet</button>
+          <!-- <button class="btn btn-primary">Copy Snippet</button> -->
         </div><!-- /setup sub-snippet-->
         <div class="snippet">
           <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
@@ -501,7 +501,7 @@ function solidGround(){
   runner.changeAnimation("run");
   if(runner.touching.right){
     runner.velocity.x = 0;
-    runner.velocity.y+= gravity;
+    runner.velocity.y+= 30;
   }
 }
          </pre>
@@ -554,7 +554,6 @@ runner.velocity.x = runnerSpeed;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /draw sub-snippet-->
-
         </section><!-- /whole snippet -->
         <section class=" col-sm-12 code-snippet">
           <h3 class="section-title">The Virtual Camera</h3>
@@ -605,7 +604,7 @@ var backgroundTiles;
 currentBackgroundTilePosition = -width;
 backgroundTiles = new Group;
             </pre>
-            <button class="btn btn-primary">Copy Snippet</button>
+<!--             <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
           <div class="snippet">
             <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
@@ -760,7 +759,6 @@ function updateScore(){
           </pre>
           <!-- <button class="btn btn-primary">Copy Snippet</button> -->
         </div><!-- /user-Declared sub-snippet-->
-
         </section><!-- /whole snippet -->
         <section class=" col-sm-12 code-snippet">
           <h3 class="section-title">Updating Previous Functions</h3>
@@ -779,6 +777,32 @@ playerScore = 0;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
+        </section><!-- /whole snippet -->
+        <section class=" col-sm-12 code-snippet">
+          <h3 class="section-title">Adding Sound</h3>
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
+            <pre class="snippet-text">
+gameMusic.play();
+            </pre>
+<!--             <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>fallCheck()</code> function.</h4>
+            <pre class="snippet-text">
+gameMusic.stop();
+gameOverMusic.play();
+            </pre>
+<!--             <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->
+          <div class="snippet">
+            <h4 class="snippet-title">Put this in your <code>newGame()</code> function.</h4>
+            <pre class="snippet-text">
+gameOverMusic.stop();
+gameMusic.play();
+            </pre>
+<!--             <button class="btn btn-primary">Copy Snippet</button> -->
+          </div><!-- /setup sub-snippet-->                  
         </section><!-- /whole snippet -->
         <section class=" col-sm-12 code-snippet">
           <h3 class="section-title">Custom Loading Screen</h3>
@@ -1116,6 +1140,8 @@ runningAnimation = loadAnimation(
 gameBackground = loadImage('https://la-wit.github.io/build-an-infinite-runner/build/images/environments/defaultBackground.png');
 platformBackground = loadImage('https://la-wit.github.io/build-an-infinite-runner/build/images/environments/defaultPlatform.png');
 gameFont = loadFont('https://la-wit.github.io/build-an-infinite-runner/build/fonts/ARCADE_R.TTF');
+gameMusic = loadSound('https://la-wit.github.io/build-an-infinite-runner/build/sounds/generic-game-loop-4.wav');
+gameOverMusic = loadSound('https://la-wit.github.io/build-an-infinite-runner/build/sounds/over.wav');
           </code></pre>
         </div>
       </div>
@@ -1129,6 +1155,8 @@ gameFont = loadFont('https://la-wit.github.io/build-an-infinite-runner/build/fon
 gameBackground = loadImage('https://la-wit.github.io/build-an-infinite-runner/build/images/environments/desertBackground.png');
 platformBackground = loadImage('https://la-wit.github.io/build-an-infinite-runner/build/images/environments/desertPlatform.png');
 gameFont = loadFont('https://la-wit.github.io/build-an-infinite-runner/build/fonts/ARCADE_R.TTF');
+gameMusic = loadSound('https://la-wit.github.io/build-an-infinite-runner/build/sounds/generic-game-loop-4.wav');
+gameOverMusic = loadSound('https://la-wit.github.io/build-an-infinite-runner/build/sounds/over.wav');
           </code></pre>
         </div>
       </div>
@@ -1142,6 +1170,8 @@ gameFont = loadFont('https://la-wit.github.io/build-an-infinite-runner/build/fon
 gameBackground = loadImage('https://la-wit.github.io/build-an-infinite-runner/build/images/environments/industrialBackground.png');
 platformBackground = loadImage('https://la-wit.github.io/build-an-infinite-runner/build/images/environments/industrialPlatform.png');
 gameFont = loadFont('https://la-wit.github.io/build-an-infinite-runner/build/fonts/ARCADE_R.TTF');
+gameMusic = loadSound('https://la-wit.github.io/build-an-infinite-runner/build/sounds/generic-game-loop-4.wav');
+gameOverMusic = loadSound('https://la-wit.github.io/build-an-infinite-runner/build/sounds/over.wav');
           </code></pre>
         </div>
       </div>

@@ -355,3 +355,11 @@ footer .logos img {
 .modal-custom code {
   color: white;
 }
+
+@media (max-width: 400px) {
+  .book-cover {
+    width: 40%;
+    height: auto;
+    float: left;
+  }
+}
