@@ -360,6 +360,6 @@ footer .logos img {
   .book-cover {
     width: 40%;
     height: auto;
-    float: left;
+    margin: auto;
   }
 }
