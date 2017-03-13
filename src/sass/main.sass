@@ -10,6 +10,7 @@ body
   background: url('../images/bg.png') repeat
 .navbar 
   background: $navy  
+  min-height: 50px
 code
   background: rgba(0,0,0,0.3)
   color: black
@@ -113,35 +114,35 @@ div.game-art-inner-wrapper
     padding: 10px
 #code-snippets
   padding: auto 10px
-  .main-section-title, .section-subtitle
-    text-align: center
-    width: 90%
-    margin: auto
-  .code-snippet
-    max-width: 100%
-    margin: 0
-  hr
-    background: #222
-    border-bottom: #222
-    height: 0
-    width: 80%
-  .snippet
-    background: #222
-    overflow: hidden
+.main-section-title, .section-subtitle
+  text-align: center
+  width: 90%
+  margin: auto
+.code-snippet
+  max-width: 100%
+  margin: 0
+hr
+  background: #222
+  border-bottom: #222
+  height: 0
+  width: 80%
+.snippet
+  background: #222
+  overflow: hidden
+  color: white
+  max-width: 100%
+  margin-bottom: 10px
+  border-radius: 5px 
+.snippet-title
+  background: $purple
+  font-weight: normal
+  padding: 5px
+  font-size: 1.1rem
+  code
     color: white
-    max-width: 100%
-    margin-bottom: 10px
-    border-radius: 5px 
-  .snippet-title
-    background: $purple
-    font-weight: normal
-    padding: 5px
-    font-size: 1.1rem
-    code
-      color: white
-  .snippet-text
-    padding: 10px
-    color: white
+.snippet-text
+  padding: 10px
+  color: white
   .challenge-inner-wrapper
     background: $purple
     border-radius: 5px
@@ -188,3 +189,6 @@ footer
     width: 40%
     height: auto
     margin: auto
+@media (max-width: 991px)    
+  .navbar 
+    min-height: 60px
