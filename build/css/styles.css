@@ -326,6 +326,21 @@ div.game-art-inner-wrapper .game-art-text {
   color: white;
 }
 
+#code-snippets .solution-breakdown {
+  background: rgba(97, 4, 95, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#code-snippets .solution-breakdown .solution {
+  display: inline-block;
+  margin-top: 15px;
+}
+
+#code-snippets .solution-breakdown section {
+  background: none;
+}
+
 footer {
   background: #222a35;
   padding: 30px 15px;
