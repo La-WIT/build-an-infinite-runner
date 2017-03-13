@@ -359,7 +359,8 @@ var gameBackground;
 var platformBackground;
 var gameFont;
 var gameMusic;
-var GameOverMusic;
+var gameOverMusic;
+var jumpSound;
             </pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /var sub-snippet-->
@@ -431,7 +432,7 @@ var currentPlatformLocation;
           <div class="snippet">
             <h4 class="snippet-title">Put this in your <code>setup()</code> function.</h4>
             <pre class="snippet-text">
-currentPlatformLocation = -width
+currentPlatformLocation = -width;
             </pre>
 <!--             <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /setup sub-snippet-->
@@ -675,7 +676,7 @@ updateSprites(false);
             <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
             <pre class="snippet-text">
 function gameOverText(){
-    background(0,0,0,10)
+    background(0,0,0,10);
     fill('white');
     stroke('black')
     textAlign(CENTER);
@@ -706,7 +707,7 @@ newGame();
             <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
             <pre class="snippet-text">
 function newGame(){
-  if((keyWentDown(UP_ARROW)) ){
+  if(keyWentDown(UP_ARROW)) ){
     platformsGroup.removeSprites();
     backgroundTiles.removeSprites();
     gameOver = false;
