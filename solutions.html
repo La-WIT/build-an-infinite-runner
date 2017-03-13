@@ -40,15 +40,23 @@
             <a class="nav-link" href="game.html">Play the Game</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Solutions to Further Practice Challenges</a>
+            <a class="nav-link" href="#">Solutions to Further Challenges</a>
           </li>
         </ul>
       </div>
     </nav>
+    <section class="solution-jumbo-wrapper container">
+      <div class="jumbotron solution-jumbo">
+        <h1 class="display-3 align-middle">Solutions to "Further Challenges"</h1>
+        <p class="lead">Here you will find solutions to the "Further Challenges" in the back of your booklet. Each challenge is explained below. Click the "Show Solution" button to see the code for how to solve the challenge.</p>
+      </div>
+    </section>
     <section class="container" id="code-snippets">
       <div class="challenge-wrapper">
-        <h2>Progressive Difficulty</h2>
-        <p class="challenge-prompt">Right now, your character runs at a steady speed. But what if you want him to run a little faster as time goes on? You know how to add to a variable, and you know that our player’s speed is a variable. So how would you add to the speed variable as time went on? Tip: <code>runnerSpeed</code> doesn’t need to change much for you to notice the effect. Try increasing it by very small numbers, decimals even. </p>
+        <div class="challenge-inner-wrapper">
+          <h2>Progressive Difficulty</h2>
+          <p class="challenge-prompt">Right now, your character runs at a steady speed. But what if you want him to run a little faster as time goes on? You know how to add to a variable, and you know that our player’s speed is a variable. So how would you add to the speed variable as time went on? Tip: <code>runnerSpeed</code> doesn’t need to change much for you to notice the effect. Try increasing it by very small numbers, decimals even. </p>
+        </div>
         <div class="solution-breakdown">
           <p>This one is relatively simple, so we only need one line of code! Let's think about what we know and then we'll dive into solving the problem.</p>
           <h5>What we know</h5>
@@ -76,8 +84,10 @@ playerScore += 0.01;
     </section><!-- /challenge section -->
     <section class="container" id="code-snippets">
       <div class="challenge-wrapper">
-        <h2>Mobile-Friendly Play</h2>
-        <p class="challenge-prompt">We built this game for computers with keyboards. But suppose you want to show your friends on the run? P5.js has a function call <code>touchStarted()</code> that works a lot like <code>keyWentDown()</code> but detects touchscreen touches. How would you use <code>touchStarted()</code> to make your game take touchscreen inputs? Find out more about the <code>touchStarted()</code> function at <a target="blank" href="http://p5js.org/reference/#/p5/touchStarted">http://p5js.org/reference/#/p5/touchStarted</a>.</p>
+        <div class="challenge-inner-wrapper">
+          <h2>Mobile-Friendly Play</h2>
+          <p class="challenge-prompt">We built this game for computers with keyboards. But suppose you want to show your friends on the run? P5.js has a function call <code>touchStarted()</code> that works a lot like <code>keyWentDown()</code> but detects touchscreen touches. How would you use <code>touchStarted()</code> to make your game take touchscreen inputs? Find out more about the <code>touchStarted()</code> function at <a target="blank" href="http://p5js.org/reference/#/p5/touchStarted">http://p5js.org/reference/#/p5/touchStarted</a>.</p> 
+        </div>
         <div class="solution-breakdown">
           <p>This one may be a bit tricky because we're using a brand new function. Let's think about what we know about <code>keyWentDown()</code> and how we can apply what we know about it to using <code>touchStarted()</code>.</p>
           <h5>What we know</h5>
@@ -128,8 +138,10 @@ function touchStarted(){
     </section>
     <section class="container" id="code-snippets">
       <div class="challenge-wrapper">
-        <h2>Jumping Sounds</h2>
-        <p class="challenge-prompt">Keen observers may have noticed yet another variable we haven’t addressed. The variable <code>jumpSound</code> holds a cute little sound for when our character jumps. You know how to play sounds. You know how to stop sounds. Where should you put the commands for playing and stopping <code>jumpSound</code>? Hint: We only need to hear the sound when the character jumps.</p>
+        <div class="challenge-inner-wrapper">
+          <h2>Jumping Sounds</h2>
+          <p class="challenge-prompt">Keen observers may have noticed yet another variable we haven’t addressed. The variable <code>jumpSound</code> holds a cute little sound for when our character jumps. You know how to play sounds. You know how to stop sounds. Where should you put the commands for playing and stopping <code>jumpSound</code>? Hint: We only need to hear the sound when the character jumps.</p>
+        </div>
         <div class="solution-breakdown">
           <p>This one is pretty straight forward. Let's dive right in.</p>
           <h5>What we know</h5>

@@ -326,8 +326,19 @@ div.game-art-inner-wrapper .game-art-text {
   color: white;
 }
 
+#code-snippets .challenge-inner-wrapper {
+  background: #61045F;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+#code-snippets .challenge-inner-wrapper code {
+  color: white;
+}
+
 #code-snippets .solution-breakdown {
-  background: rgba(97, 4, 95, 0.1);
   padding: 15px;
   border-radius: 5px;
 }
@@ -339,6 +350,14 @@ div.game-art-inner-wrapper .game-art-text {
 
 #code-snippets .solution-breakdown section {
   background: none;
+}
+
+.solution-jumbo-wrapper {
+  margin-top: 100px;
+}
+
+.solution-jumbo {
+  margin-bottom: 0;
 }
 
 footer {
