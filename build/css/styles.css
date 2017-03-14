@@ -3,6 +3,14 @@ body {
   background: url("../images/bg.png") repeat;
 }
 
+a {
+  color: #077d67;
+}
+
+a:hover {
+  color: #066553;
+}
+
 .navbar {
   background: #222a35;
   min-height: 50px;
@@ -280,29 +288,29 @@ div.game-art-inner-wrapper .game-art-text {
   padding: 10px;
 }
 
-#code-snippets {
+#code-snippets, #game-art-and-media {
   padding: auto 10px;
 }
 
-.main-section-title, .section-subtitle {
+#code-snippets .main-section-title, #code-snippets .section-subtitle, #game-art-and-media .main-section-title, #game-art-and-media .section-subtitle {
   text-align: center;
   width: 90%;
   margin: auto;
 }
 
-.code-snippet {
+#code-snippets .code-snippet, #game-art-and-media .code-snippet {
   max-width: 100%;
   margin: 0;
 }
 
-hr {
+#code-snippets hr, #game-art-and-media hr {
   background: #222;
   border-bottom: #222;
   height: 0;
   width: 80%;
 }
 
-.snippet {
+#code-snippets .snippet, #game-art-and-media .snippet {
   background: #222;
   overflow: hidden;
   color: white;
@@ -311,23 +319,23 @@ hr {
   border-radius: 5px;
 }
 
-.snippet-title {
+#code-snippets .snippet-title, #game-art-and-media .snippet-title {
   background: #61045F;
   font-weight: normal;
   padding: 5px;
   font-size: 1.1rem;
 }
 
-.snippet-title code {
+#code-snippets .snippet-title code, #game-art-and-media .snippet-title code {
   color: white;
 }
 
-.snippet-text {
+#code-snippets .snippet-text, #game-art-and-media .snippet-text {
   padding: 10px;
   color: white;
 }
 
-.snippet-text .challenge-inner-wrapper {
+#code-snippets .challenge-inner-wrapper, #game-art-and-media .challenge-inner-wrapper {
   background: #61045F;
   border-radius: 5px;
   padding: 15px;
@@ -335,21 +343,21 @@ hr {
   margin-bottom: 10px;
 }
 
-.snippet-text .challenge-inner-wrapper code {
+#code-snippets .challenge-inner-wrapper code, #game-art-and-media .challenge-inner-wrapper code {
   color: white;
 }
 
-.snippet-text .solution-breakdown {
+#code-snippets .solution-breakdown, #game-art-and-media .solution-breakdown {
   padding: 15px;
   border-radius: 5px;
 }
 
-.snippet-text .solution-breakdown .solution {
+#code-snippets .solution-breakdown .solution, #game-art-and-media .solution-breakdown .solution {
   display: inline-block;
   margin-top: 15px;
 }
 
-.snippet-text .solution-breakdown section {
+#code-snippets .solution-breakdown section, #game-art-and-media .solution-breakdown section {
   background: none;
 }
 
@@ -359,6 +367,10 @@ hr {
 
 .solution-jumbo {
   margin-bottom: 0;
+}
+
+#resources-list ul {
+  list-style: none;
 }
 
 footer {

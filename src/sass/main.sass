@@ -8,6 +8,10 @@ $navy: #222a35
 body
   background: $teal
   background: url('../images/bg.png') repeat
+a
+  color: darken($teal, 10%)
+  &:hover
+    color: darken($teal, 15%)
 .navbar 
   background: $navy  
   min-height: 50px
@@ -112,37 +116,37 @@ div.game-art-inner-wrapper
         @include spriteSpirit('pnrun', '../images/sprites/runstrips/purpleNinja.png', false, 2500px, 250px, 10, .7, 0, false)
   .game-art-text
     padding: 10px
-#code-snippets
+#code-snippets, #game-art-and-media
   padding: auto 10px
-.main-section-title, .section-subtitle
-  text-align: center
-  width: 90%
-  margin: auto
-.code-snippet
-  max-width: 100%
-  margin: 0
-hr
-  background: #222
-  border-bottom: #222
-  height: 0
-  width: 80%
-.snippet
-  background: #222
-  overflow: hidden
-  color: white
-  max-width: 100%
-  margin-bottom: 10px
-  border-radius: 5px 
-.snippet-title
-  background: $purple
-  font-weight: normal
-  padding: 5px
-  font-size: 1.1rem
-  code
+  .main-section-title, .section-subtitle
+    text-align: center
+    width: 90%
+    margin: auto
+  .code-snippet
+    max-width: 100%
+    margin: 0
+  hr
+    background: #222
+    border-bottom: #222
+    height: 0
+    width: 80%
+  .snippet
+    background: #222
+    overflow: hidden
     color: white
-.snippet-text
-  padding: 10px
-  color: white
+    max-width: 100%
+    margin-bottom: 10px
+    border-radius: 5px 
+  .snippet-title
+    background: $purple
+    font-weight: normal
+    padding: 5px
+    font-size: 1.1rem
+    code
+      color: white
+  .snippet-text
+    padding: 10px
+    color: white
   .challenge-inner-wrapper
     background: $purple
     border-radius: 5px
@@ -163,7 +167,9 @@ hr
   margin-top: 100px      
 .solution-jumbo
   margin-bottom: 0
-
+#resources-list
+  ul
+    list-style: none
 footer
   background: $navy
   padding: 30px 15px
