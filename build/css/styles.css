@@ -376,6 +376,9 @@ div.game-art-inner-wrapper .game-art-text {
 footer {
   background: #222a35;
   padding: 30px 15px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   color: white;
 }
 
