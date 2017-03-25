@@ -32,6 +32,9 @@
         max-width: 700px;
         text-align: center;
       }
+      p.instructions {
+        margin-top: 60px;
+      }
       p a {
         font-weight: bold;
         text-decoration: none;
@@ -166,7 +169,8 @@
     }
 
     function setup() {
-      createP('Press the <strong>UP ARROW</strong>, <strong>click</strong>, or <strong>tap</strong> to jump.');
+      var instructions = createP('Press the <strong>UP ARROW</strong>, <strong>click</strong>, or <strong>tap</strong> to jump.');
+      instructions.addClass('instructions');
       createCanvas(840, 390);
       createP("This game is a part of <a target='_blank' href='http://www.la-wit.org/'>La-WIT</a>'s annual <strong>IT Girls</strong> program. IT Girls is a creative computing workshop geared toward East Baton Rouge Parish middle school girls held in the spring. The program provides an opportunity for female students to learn coding fundamentals directly from local STEM professionals, which provides a unique opportunity to actively explore and gain greater insight into the high-demand field of computer programming. The goal of IT Girls is to increase student interest and preparedness for the STEM workforce and Louisiana’s knowledge economy.");
       createP('Like this game? Click <a target="_blank" href="http://la-wit.github.io/build-an-infinite-runner">here</a> to learn how to make it!');
