@@ -58,7 +58,7 @@
     <section class="container">
       <div class="row">
         <div class="col-md-9">
-          <h1>Welcome to IT Girls 2017!</h1>
+          <h1>Welcome to IT Girls!</h1>
           <p>Are you interested in computer programming, web development, game development, or just making fun things? Have you done a bit of programming with Scratch, Snap!, or Blocky and want to transition into a typed programming experience? This class is designed to help you do just that! Don’t worry if this is your first time programming! This is a beginner-friendly exercise that will get you up and programming right away!</p>
           <h2>You Will Learn</h2>
           <ul>
@@ -995,7 +995,9 @@ function gameOverText(){
           <div class="snippet">
             <h4 class="snippet-title">Put this in your <code>draw()</code> function.</h4>
             <pre class="snippet-text"><code>
-newGame();
+if(keyWentDown(UP_ARROW)){
+  newGame();
+}
             </code></pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
           </div><!-- /draw sub-snippet-->
@@ -1003,18 +1005,16 @@ newGame();
             <h4 class="snippet-title">Declare this function at the bottom of your code</h4>
             <pre class="snippet-text"><code>
 function newGame(){
-  if(keyWentDown(UP_ARROW)) ){
-    platformsGroup.removeSprites();
-    backgroundTiles.removeSprites();
-    gameOver = false;
-    updateSprites(true);
-    runnerSpeed = 15;
-    runner.position.x = 50;
-    runner.position.y = 100;
-    runner.velocity.x = runnerSpeed;
-    currentPlatformLocation = -width;
-    currentBackgroundTilePosition = -width;
-  }
+  platformsGroup.removeSprites();
+  backgroundTiles.removeSprites();
+  gameOver = false;
+  updateSprites(true);
+  runnerSpeed = 15;
+  runner.position.x = 50;
+  runner.position.y = 100;
+  runner.velocity.x = runnerSpeed;
+  currentPlatformLocation = -width;
+  currentBackgroundTilePosition = -width;
 }
             </code></pre>
             <!-- <button class="btn btn-primary">Copy Snippet</button> -->
