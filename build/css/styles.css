@@ -110,6 +110,15 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.leprechaun .character-spri
   background-position: left 0;
 }
 
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.leprechaun .character-sprite{
+  background-image: url("../images/sprites/runstrips/leprechaunStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
 @keyframes leprechaunrun {
   to {
     background-position: -1000px 0;
@@ -132,6 +141,15 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.robot .character-sprite {
   width: 250px;
   height: 250px;
   background-position: left 0;
+}
+
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.robot .character-sprite{
+  background-image: url("../images/sprites/runstrips/robotStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
 }
 
 @keyframes robotrun {
@@ -157,6 +175,14 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.kitty .character-sprite {
   height: 250px;
   background-position: left 0;
 }
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.kitty .character-sprite{
+  background-image: url("../images/sprites/runstrips/kittyStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
 
 @keyframes kittyrun {
   to {
@@ -181,7 +207,14 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.puppy .character-sprite {
   height: 250px;
   background-position: left 0;
 }
-
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.puppy .character-sprite{
+  background-image: url("../images/sprites/runstrips/puppyStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
 @keyframes puppyrun {
   to {
     background-position: -2000px 0;
@@ -205,10 +238,51 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.adventureMan .character-sp
   height: 250px;
   background-position: left 0;
 }
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.adventureMan .character-sprite{
+  background-image: url("../images/sprites/runstrips/adventureManStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
 
 @keyframes amrun {
   to {
     background-position: -2500px 0;
+  }
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.littleGirl {
+  background: #93f;
+  background: radial-gradient(#bf81ff, #5a00b0);
+}
+
+div.game-art-inner-wrapper div.game-art-image-wrapper.littleGirl .character-sprite {
+  width: 100%;
+  background-image: url("../images/sprites/runstrips/littleGirl.png");
+  background-repeat: no-repeat;
+  animation: littlegirlrun steps(4);
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  width: 250px;
+  height: 250px;
+  background-position: left 0;
+}
+
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.littleGirl .character-sprite{
+  background-image: url("../images/sprites/runstrips/littleGirlStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+@keyframes littlegirlrun {
+  to {
+    background-position: -998px 0;
   }
 }
 
@@ -228,6 +302,15 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.adventureWoman .character-
   width: 250px;
   height: 250px;
   background-position: left 0;
+}
+
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.adventureWoman .character-sprite{
+  background-image: url("../images/sprites/runstrips/adventureWomanStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
 }
 
 @keyframes awrun {
@@ -254,6 +337,15 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.redNinja .character-sprite
   background-position: left 0;
 }
 
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.redNinja .character-sprite{
+  background-image: url("../images/sprites/runstrips/redNinjaStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
 @keyframes rnrun {
   to {
     background-position: -2500px 0;
@@ -277,7 +369,14 @@ div.game-art-inner-wrapper div.game-art-image-wrapper.purpleNinja .character-spr
   height: 250px;
   background-position: left 0;
 }
-
+.still div.game-art-inner-wrapper div.game-art-image-wrapper.purpleNinja .character-sprite{
+  background-image: url("../images/sprites/runstrips/purpleNinjaStill.png");
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
 @keyframes pnrun {
   to {
     background-position: -2500px 0;

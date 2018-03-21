@@ -82,21 +82,22 @@
       </div><!-- /jumbotron -->
       <h1 class="subsection-title">Runner Characters</h1>
       <div class="row characters">
-        <div class="game-art-card col-md-4">
-          <div class="game-art-inner-wrapper">
-            <div class="game-art-image-wrapper runner leprechaun"><div class="character-sprite"></div></div>
-            <div class="game-art-text">
-              <h3 class="game-art-name">Leprechaun</h3>
-              <button class="btn btn-warning" id="leprechaun-toggle">Show Code</button>
-            </div>
-          </div>
-        </div>
+        
         <div class="game-art-card col-md-4">
           <div class="game-art-inner-wrapper">
             <div class="game-art-image-wrapper runner robot"><div class="character-sprite"></div></div>
             <div class="game-art-text">
               <h3 class="game-art-name">Robot</h3>
               <button class="btn btn-warning" id="robot-toggle">Show Code</button>
+            </div>
+          </div>
+        </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner littleGirl"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Little Girl</h3>
+              <button class="btn btn-warning" id="little-girl-toggle">Show Code</button>
             </div>
           </div>
         </div>
@@ -141,21 +142,21 @@ runningAnimation = loadAnimation(
             </div><!-- /artwork code-->
           </div><!-- /whole snippet -->
         </div>
-        <div class="col-md-12 art-code-snippet code-snippet" id='leprechaun-codeblock'>
+        <div class="col-md-12 art-code-snippet code-snippet" id='little-girl-codeblock'>
           <div class=" col-sm-12 code-snippet">
-            <h3 class="section-title">Leprechaun</h3>
+            <h3 class="section-title">Little Girl</h3>
             <div class="snippet">
-              <h4 class="snippet-title">Put this into your <code>preload()</code> function to select the Leprechaun as your character.</h4>
+              <h4 class="snippet-title">Put this into your <code>preload()</code> function to select the Little Girl as your character.</h4>
               <pre class="snippet-text"><code>
 jumpingAnimation = loadAnimation(
-  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/jump00.png', 
-  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/jump01.png' 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/jump00.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/jump01.png' 
 );
 runningAnimation = loadAnimation(
-  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run00.png', 
-  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run01.png', 
-  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run02.png', 
-  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run03.png'
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run00.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run01.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run02.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/littleGirl/run03.png'
 );
               </code></pre>
             </div><!-- /artwork code-->
@@ -333,6 +334,15 @@ runningAnimation = loadAnimation(
             </div>
           </div>
         </div>
+        <div class="game-art-card col-md-4">
+          <div class="game-art-inner-wrapper">
+            <div class="game-art-image-wrapper runner leprechaun"><div class="character-sprite"></div></div>
+            <div class="game-art-text">
+              <h3 class="game-art-name">Leprechaun</h3>
+              <button class="btn btn-warning" id="leprechaun-toggle">Show Code</button>
+            </div>
+          </div>
+        </div>
         <div class="col-md-12 art-code-snippet code-snippet" id='adventure-woman-codeblock'>
                   <div class=" col-sm-12 code-snippet">
                     <h3 class="section-title">Adventure Woman</h3>
@@ -397,6 +407,26 @@ runningAnimation = loadAnimation(
                       </code></pre>
                     </div><!-- /artwork code-->
                   </div><!-- /whole snippet -->
+                </div>
+                  <div class="col-md-12 art-code-snippet code-snippet" id='leprechaun-codeblock'>
+          <div class=" col-sm-12 code-snippet">
+            <h3 class="section-title">Leprechaun</h3>
+            <div class="snippet">
+              <h4 class="snippet-title">Put this into your <code>preload()</code> function to select the Leprechaun as your character.</h4>
+              <pre class="snippet-text"><code>
+jumpingAnimation = loadAnimation(
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/jump00.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/jump01.png' 
+);
+runningAnimation = loadAnimation(
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run00.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run01.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run02.png', 
+  'https://la-wit.github.io/build-an-infinite-runner/build/images/sprites/leprechaun/run03.png'
+);
+              </code></pre>
+            </div><!-- /artwork code-->
+          </div><!-- /whole snippet -->
                 </div>
       </div><!-- /row characters -->
       <h1 class="subsection-title">Environment Art</h1>
@@ -1298,6 +1328,15 @@ canvas {
             return text === 'Show Code' ? "Hide Code" : "Show Code"
           });
           $('#adventure-woman-codeblock').toggle(400);
+        });
+        // little-girl
+        $('#little-girl-toggle').click(function(){
+          $('.art-code-snippet:not(#little-girl-codeblock)').hide();
+          $('.btn:not(#little-girl-toggle)').text('Show Code');
+          $('#little-girl-toggle').text(function(_, text){
+            return text === 'Show Code' ? "Hide Code" : "Show Code"
+          });
+          $('#little-girl-codeblock').toggle(400);
         });
 
         // adventure-man
